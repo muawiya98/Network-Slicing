@@ -1,9 +1,9 @@
 # Satellites, Wi-Fi, 3G, 4G, 5G
 class CommunicationNetwork:
     next_id = 0
-    def __init__(self, Ctype):
+    def __init__(self, communication_type):
         self.id = CommunicationNetwork.next_id
-        self.Ctype = Ctype
+        self.communication_type = communication_type
         self.connected_with = []
         CommunicationNetwork.next_id+=1
 

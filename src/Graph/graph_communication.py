@@ -14,7 +14,7 @@ class Graph:
 
     def request_generation(self):
         self.requests = []
-        for request_id in range(number_of_request):
+        for request_id in range(random.randint(20, 100)):
             self.requests.append(RequestGenerator(request_id))
     
     def units2requests(self):

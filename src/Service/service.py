@@ -1,11 +1,11 @@
 # safety, entertainment, and autonomous drivin
-class Serices:
+class Service:
     next_id = 0
-    def __init__(self, Stype):
-        self.id = Serices.next_id
-        self.Stype = Stype
+    def __init__(self, service_type):
+        self.id = Service.next_id
+        self.service_type = service_type
         self.connected_with = []
-        Serices.next_id+=1
+        Service.next_id+=1
 
     def set_conection(self, connected_list):
         self.connected_with = connected_list
